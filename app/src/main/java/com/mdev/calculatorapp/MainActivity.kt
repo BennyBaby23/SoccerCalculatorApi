@@ -72,8 +72,6 @@ class MainActivity : AppCompatActivity() {
 
         if( !inputReady) {
             ResultLabel?.text = result.toString()
-
-
             when (buttonText) {
                 "=" -> Evalution()
             }
@@ -114,7 +112,7 @@ class MainActivity : AppCompatActivity() {
 
             ResultLabel?.text = ResultLabel?.text.toString().drop(100)
             ResultLabel?.text == "0"
-            Reset()
+            ResetEverything()
         }
         else{
             if(ResultLabel?.text?.count()==1){
@@ -128,7 +126,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //Calculator evaluator function
-    fun Reset()
+    fun ResetEverything()
     {
         result=0.0f
         lhs = ""
@@ -149,12 +147,10 @@ class MainActivity : AppCompatActivity() {
     {
         return lhs - rhs
     }
-
     fun Division(lhs: Float, rhs: Float): Float
     {
         return lhs / rhs
     }
-
     fun Multiplication(lhs: Float, rhs: Float): Float
     {
         return lhs * rhs
@@ -170,7 +166,6 @@ class MainActivity : AppCompatActivity() {
             "*" -> result = Multiplication(lhs.toFloat(), rhs.toFloat())
 
         }
-
         ResultLabel?.text = result.toString()
         lhs = result.toString()
         rhs = ""

@@ -59,7 +59,7 @@
                 android:layout_margin="12dp"
                 android:backgroundTint="@color/material_on_background_disabled"
                 android:onClick="ExtraButton"
-                android:text="C"
+                android:text="⌫"
                 android:textColor="@color/white"
                 android:textSize="32dp"
                 app:cornerRadius="36dp" />
@@ -71,21 +71,24 @@
                 android:layout_height="72dp"
                 android:layout_margin="12dp"
                 android:backgroundTint="#059CAF"
+                android:onClick="NumberButtons"
                 android:text="("
                 android:textColor="#FFFFFF"
                 android:textSize="32dp"
                 app:cornerRadius="36dp" />
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/Bracket_Button"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="36dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="32dp"
-                android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:backgroundTint="#059CAF"
-                android:id="@+id/Bracket_Button"
-                android:text=")" />
+                android:onClick="NumberButtons"
+                android:text=")"
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                app:cornerRadius="36dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/Divide_button"
@@ -154,7 +157,7 @@
                 android:layout_margin="12dp"
                 android:backgroundTint="#FF9800"
                 android:onClick="OperatorButtons"
-                android:text="*"
+                android:text="X"
                 android:textColor="@color/white"
                 android:textSize="32dp"
                 app:cornerRadius="36dp" />
